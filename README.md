@@ -6,7 +6,7 @@ Change the `dmenu_params` to whatever. This is set up to use dmenu2, so the opti
 Created because there's no dmenu alias scripts for zsh and printing all commands from zsh is way faster than using compgen. It's also less convoluted than `dmenu-run-aliases`.
 
 # requires:
-* dmenu2
+* dmenu (or some derivative)
 * `~/.zsh_aliases` (or any file with aliases, change `aliases_file`)
 
 # features
