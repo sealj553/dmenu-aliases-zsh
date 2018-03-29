@@ -19,10 +19,3 @@ Created because there's no dmenu alias scripts for zsh and printing all commands
 * gets list of zsh commands and sorts
 * joins streams with aliases first and passes to dmenu
 * first word of output removed, the rest is executed
-
-# that unsightly sed line:
-* remove all lines starting with #
-* remove all lines that are blank
-* remove the word "alias" from each line
-* remove the first "=" on each line
-* alias cmd1="cmd2"  ->  cmd1 "cmd2"

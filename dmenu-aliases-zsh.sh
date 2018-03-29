@@ -11,3 +11,11 @@ if [ "$(print $cmd | awk '{print $2}' | head -c 1)" = "\"" ]; then
     cmd=$(print $cmd | cut -d' ' -f2- | tr -d "\"") 
 fi
 eval "$cmd"
+
+# that unsightly sed line:
+#* remove all lines starting with #
+#* remove all lines that are blank
+#* remove the word "alias" from each line
+#* remove the first "=" on each line
+#* alias cmd1="cmd2"  ->  cmd1 "cmd2"
+
